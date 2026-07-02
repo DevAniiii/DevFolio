@@ -57,8 +57,8 @@ export default function Contact() {
       </header>
 
       <div className="contact__container relative mx-auto mt-[clamp(28px,6vw,60px)] flex w-[min(1200px,92vw)] items-start justify-between gap-[clamp(24px,5vw,64px)] pb-[clamp(40px,7vw,80px)] max-[900px]:flex-col max-[900px]:items-stretch max-[900px]:gap-[24px]">
-        <div className="contact__left min-w-0 max-w-[680px] flex-[1_1_58%] max-[900px]:max-w-none">
-          <h2 className="contact__title mb-[clamp(14px,3vw,22px)] font-[font4] text-[clamp(2.2rem,5.2vw,5.4rem)] font-extrabold leading-[0.92] tracking-[-0.03em]">
+        <div className="contact__left min-w-0 max-w-[680px] flex-[1_1_58%] max-[900px]:max-w-none max-[900px]:text-center">
+          <h2 className="contact__title mb-[clamp(14px,3vw,22px)] text-[clamp(2.2rem,5.2vw,5.4rem)] font-extrabold leading-[0.92] tracking-[-0.03em] max-[420px]:text-[clamp(2rem,10vw,2.8rem)] max-[900px]:mx-auto">
             {CONTACT.title[0]}
             <br />
             {CONTACT.title[1]}
@@ -68,10 +68,10 @@ export default function Contact() {
             </span>
           </h2>
 
-          <p className="contact__desc mb-[clamp(18px,4vw,34px)] max-w-[56ch] text-[clamp(0.95rem,1.4vw,1rem)] leading-[1.7] text-white/65">{CONTACT.body}</p>
+          <p className="contact__desc mb-[clamp(18px,4vw,34px)] max-w-[56ch] text-[clamp(0.95rem,1.4vw,1rem)] leading-[1.7] text-white/65 max-[900px]:mx-auto">{CONTACT.body}</p>
 
-          <div className="contact__info mt-[18px] flex flex-col gap-[10px]">
-            <a className="contact__email w-fit border-b border-white/25 pb-[6px] text-[clamp(1.05rem,3.2vw,1.35rem)] text-white/90 transition-colors hover:border-[#2167AB]/60 hover:text-[#2167AB] max-[420px]:text-[1.05rem]" href={`mailto:${email}`}>
+          <div className="contact__info mt-[18px] flex flex-col gap-[10px] max-[900px]:items-center">
+            <a className="contact__email w-fit border-b border-white/25 pb-[6px] text-[clamp(1.05rem,3.2vw,1.35rem)] max-[420px]:text-[1.05rem] text-white/90 transition-colors hover:border-white/60" href={`mailto:${email}`}>
               {email}
             </a>
           </div>
