@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/all";
 import gsap from "gsap";
 import { useRef } from "react";
-import { SmokeBackground } from "@/components/ui/SpookySmokeAnimation";
+import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 
 
@@ -119,10 +119,10 @@ export default function HeroContent() {
         stack. Passionate about creating clean user experiences, secure
         backends, and modern digital products.{" "}
       </p>{" "}
-      <button className="cursor-target mt-8 cursor-pointer rounded-xl bg-gradient-to-r from-[#0b3359] to-[#05325c] px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(42,119,189,0.45)]">
+      <Link href="#contact" className="cursor-target   inline-flex  mt-6 cursor-pointer rounded-xl bg-gradient-to-r from-[#0b3359] to-[#05325c] px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(42,119,189,0.45)]">
         {" "}
         Start a Project{" "}
-      </button>{" "}
+      </Link>{" "}
       <motion.button
         aria-label="Scroll to about section"
         onClick={() =>
