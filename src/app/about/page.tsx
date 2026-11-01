@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { PageIntro } from "@/components/ui/PageIntro";
@@ -97,21 +98,26 @@ export default function AboutPage() {
                     aria-hidden="true"
                     className="hero-grid absolute inset-0 opacity-50"
                   />
-                  <div className="relative flex aspect-[4/5] items-center justify-center">
-                    <span
+                  <div className="relative aspect-[4/5] overflow-hidden">
+                    <Image
+                      src="/pic.png"
+                      alt="Portrait of Anirban Banerjee"
+                      fill
+                      sizes="(min-width: 1024px) 33vw, 100vw"
+                      className="object-cover object-center saturate-[0.55] contrast-[1.03] brightness-[0.9]"
+                    />
+                    <div
                       aria-hidden="true"
-                      className="font-display text-[clamp(7rem,14vw,11rem)] leading-none tracking-[-0.06em] text-bone/[0.08]"
-                    >
-                      AB
-                    </span>
+                      className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/5 to-obsidian/75"
+                    />
                     <span
                       aria-hidden="true"
                       className="absolute top-5 right-5 h-2 w-2 bg-acid"
                     />
-                    <span className="absolute top-5 left-5 font-mono text-[0.625rem] uppercase tracking-[0.14em] text-mist/80">
+                    <span className="absolute top-5 left-5 font-mono text-[0.625rem] uppercase tracking-[0.14em] text-bone/85">
                       Fig. 03 / Identity
                     </span>
-                    <div className="absolute inset-x-0 bottom-0 flex items-center justify-between border-t border-line bg-obsidian/40 px-5 py-3 backdrop-blur-sm">
+                    <div className="absolute inset-x-0 bottom-0 flex items-center justify-between border-t border-line bg-obsidian/60 px-5 py-3 backdrop-blur-sm">
                       <span className="font-mono text-[0.625rem] uppercase tracking-[0.14em] text-mist">
                         Independent
                       </span>

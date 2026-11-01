@@ -29,6 +29,7 @@ export default function HomePage() {
     jobTitle: siteConfig.role,
     description: siteConfig.description,
     email: `mailto:${siteConfig.email}`,
+    image: `${siteConfig.url}/pic.png`,
     sameAs: socialLinks.map((link) => link.href),
     knowsAbout: [
       "Web application security",
